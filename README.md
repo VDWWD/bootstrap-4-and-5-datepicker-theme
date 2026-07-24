@@ -4,4 +4,4 @@ More info: https://www.vanderwaal.eu/mini-projecten/bootstrap-datepicker-theme
 
 &nbsp;
 
-<img src="https://www.vanderwaal.eu/images/site/codesnippets/images/bootstrap-datepicker-theme.jpg](https://www.vanderwaal.eu/images/site/codesnippets/images/bootstrap-4-and-5-datepicker-theme.jpg">
+<img src="https://www.vanderwaal.eu/images/site/codesnippets/images/bootstrap-datepicker-theme.jpg">
