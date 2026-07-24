@@ -1,0 +1,186 @@
+﻿/*
+
+VDWWD Bootstrap DatePicker theme
+For Bootstrap 4 & 5 and DatePicker version 1.9.0+
+
+https://www.vanderwaal.eu
+
+
+No need to add the original bootstrap-datepicker.css file to make the theme work
+
+*/
+
+.datepicker {
+    font-family: Verdana, Arial;
+    background-color: #566895;
+    border: 2px solid #282c41;
+    direction: ltr;
+    padding: 6px;
+    color: #fff;
+    font-size: .8rem;
+    min-width: 250px;
+    border-radius: 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+    .datepicker table {
+        width: 100%
+    }
+
+    .datepicker tbody td,
+    .datepicker thead .dow {
+        border: 1px solid #bbb
+    }
+
+    .datepicker td,
+    .datepicker th {
+        width: 35px;
+        height: 28px;
+        text-align: center
+    }
+
+    .datepicker table tr th.dow {
+        color: #666;
+        background-color: #f1f1f1
+    }
+
+    .datepicker table tr td.day {
+        color: #666;
+        background-color: #dedede
+    }
+
+        .datepicker table tr td.day:hover,
+        .datepicker table tr td.day.focused {
+            background: #566895;
+            cursor: pointer
+        }
+
+    .datepicker table tr td.old,
+    .datepicker table tr td.old:hover,
+    .datepicker table tr td.new,
+    .datepicker table tr td.new:hover {
+        color: #ccc;
+        background: #ececec;
+        cursor: default
+    }
+
+    .datepicker table tr td.day:not(.old):not(.new):hover,
+    .datepicker table tr td.today:hover,
+    .datepicker table tr td.today:hover:hover,
+    .datepicker table tr td.today.disabled:hover,
+    .datepicker table tr td.today.disabled:hover:hover,
+    .datepicker table tr td.today:active,
+    .datepicker table tr td.today:hover:active,
+    .datepicker table tr td.today.disabled:active,
+    .datepicker table tr td.today.disabled:hover:active,
+    .datepicker table tr td.today.active,
+    .datepicker table tr td.today:hover.active,
+    .datepicker table tr td.today.disabled.active,
+    .datepicker table tr td.today.disabled:hover.active,
+    .datepicker table tr td.today.disabled,
+    .datepicker table tr td.today:hover.disabled,
+    .datepicker table tr td.today.disabled.disabled,
+    .datepicker table tr td.today.disabled:hover.disabled,
+    .datepicker table tr td.today[disabled],
+    .datepicker table tr td.today:hover[disabled],
+    .datepicker table tr td.today.disabled[disabled],
+    .datepicker table tr td.today.disabled:hover[disabled] {
+        background-color: #566895;
+        color: #fff
+    }
+
+        .datepicker table tr td.active,
+        .datepicker table tr td.active:hover,
+        .datepicker table tr td.active.disabled,
+        .datepicker table tr td.active.disabled:hover,
+        .datepicker table tr td.today,
+        .datepicker table tr td.today:hover,
+        .datepicker table tr td.today.disabled,
+        .datepicker table tr td.today.disabled:hover {
+            background-color: #dedede;
+            border-color: #bbb
+        }
+
+            .datepicker table tr td.active,
+            .datepicker table tr td.active:hover,
+            .datepicker table tr td.active.disabled,
+            .datepicker table tr td.active.disabled:hover,
+            .datepicker table tr td.today:hover,
+            .datepicker table tr td.today.disabled:hover {
+                background-color: #8493bc !important;
+                color: #fff
+            }
+
+            .datepicker table tr td.today,
+            .datepicker table tr td.today.disabled {
+                color: #bf1616;
+                background-color: #dedede
+            }
+
+    .datepicker .datepicker-switch:hover,
+    .datepicker .prev:hover,
+    .datepicker .next:hover,
+    .datepicker tfoot tr th:hover {
+        background: #8493bc;
+        cursor: pointer
+    }
+
+    .datepicker .next:hover,
+    .datepicker tfoot tr th:hover {
+        border-right: 1px solid #8493bc
+    }
+
+    /* needed to generate space between the second and third thead row in day view */
+    .datepicker .extraHeaderSpacer {
+        padding: 0px !important;
+        height: 6px !important;
+        min-height: 1px !important;
+    }
+
+    /* needed to generate space between the today button and all the days in day view */
+    .datepicker tfoot::before {
+        content: '';
+        display: block;
+        height: 6px;
+    }
+
+    /* months, years, decades and centuries */
+    .datepicker span {
+        color: #666;
+        background-color: #dedede;
+        border-top: 1px solid #bbb;
+        border-right: 1px solid #bbb;
+        width: 25%;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        float: left
+    }
+
+        .datepicker span:hover {
+            background-color: #566895 !important;
+            color: #fff !important
+        }
+
+        .datepicker span.active {
+            background-color: #8493bc;
+            color: #fff;
+            border-top: 1px solid #bbb;
+            border-right: 1px solid #bbb
+        }
+
+        .datepicker span.focused:not(.active) {
+            color: #666;
+            background-color: #dedede
+        }
+
+    .datepicker .datepicker-decades tbody td,
+    .datepicker .datepicker-centuries tbody td,
+    .datepicker .datepicker-years tbody td,
+    .datepicker .datepicker-months tbody td {
+        padding: 0;
+        border-bottom: 1px solid #bbb;
+        border-left: 1px solid #bbb;
+        border-top: 0;
+        border-right: 0
+    }
